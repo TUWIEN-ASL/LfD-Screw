@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>Learning Forward & Reverse Skills from a Single Unfinished Demonstration for Constrained Manipulation Tasks</title>
+  
+  <!-- <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico"> -->
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">Learning Forward &amp; Reverse Skills from a Single Unfinished Demonstration for Constrained Manipulation Tasks</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">
+                Yexin Hu</sup>,</span>
+                <span class="author-block">
+                  Haoyi Zheng</sup>,</span>
+                  <span class="author-block">
+                    Johannes Heidersberger</sup>,</span>
+                    <span class="author-block">
+                      Dongheui Lee</span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <span class="author-block">TU Wien<br>IEEE/RSJ International Conference on Intelligent Robots & Systems(IROS), 2026</span>
+                    <!-- TODO: Remove this line if no equal contribution -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- TODO: Update with your arXiv paper ID -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper(Coming soon)</span>
+                      </a>
+                    </span>
+
+                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code(Coming soon)</span>
+                  </a>
+                </span>
+
+                <!-- TODO: Update with your arXiv paper ID -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv(Coming soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/IROS Video.mp4" type="video/mp4">
+      </video>
+      <!-- TODO: Replace with your video description -->
+      <!-- <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Learning from demonstration(LfD) enables robots to learn manipulation skills directly from expert demonstrations but remains challenging for contact-rich tasks involving geometric constraints and force interaction. Existing approaches typically require multiple demonstrations, assume complete task execution, and do not support reverse skill learning. In this paper, we present a unified one-shot learning framework for constrained manipulation that learns both forward and reverse task execution from a single, possibly unfinished demonstration. Our method decomposes demonstrations into non-contact and contact phases, with non-contact motion encoded with dynamic movement primitives (DMP), and contact motion represented as a sequence of screw motion primitives segmented by our proposed geometry-driven twist-direction segmentation algorithm. During execution, screw primitives are executed sequentially under admittance-guided pose correction and speed regulation, enabling task completion learned from unfinished demonstration as well as reverse skill execution without additional learning data. We validate our approach on four constrained contact-rich manipulation tasks -- peg insertion, battery insertion, lock opening and screw driving, demonstrating improved success rate and robustness over one-shot trajectory and segmentation baselines in both forward and reverse settings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Pipeline-->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+         <h2 class="title is-3">Overview</h2>
+         <div class="item">
+          <img src="static/images/pipeline.jpg" alt="First research result visualization" loading="lazy"/>
+          <div class="content has-text-justified">
+            <p>
+            <strong>Overview of the proposed framework.</strong> A single forward demonstration is first encoded with a DMP. During execution, the DMP reproduces free-space motion until contact is detected. The contact phase is segmented using the proposed twist-direction method, and each segment is modeled as a screw primitive. Screw primitives are executed sequentially with 6D admittance-based pose correction and 1D admittance-based speed regulation. Reverse execution reuses the learned primitives with edited parameters and reversed order, followed by reversed DMP reproduction after contact release.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+<!-- End Pipeline -->
+
+
+<!-- Tasks image-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="columns is-centered">
+        <div class="column is-half">
+
+          <h2 class="title is-3 has-text-centered">Tasks</h2>
+
+          <div id="results-carousel" class="carousel results-carousel">
+            
+            <div class="item">
+              <img src="static/images/peg.png"
+                   style="width: 100%; display: block; margin: 0 auto;" />
+              <h2 class="subtitle has-text-centered">Peg Insertion</h2>
+            </div>
+
+            <div class="item">
+              <img src="static/images/battery.png"
+                   style="width: 100%; display: block; margin: 0 auto;" />
+              <h2 class="subtitle has-text-centered">Battery Insertion</h2>
+            </div>
+
+            <div class="item">
+              <img src="static/images/key.png"
+                   style="width: 100%; display: block; margin: 0 auto;" />
+              <h2 class="subtitle has-text-centered">Lock Opening</h2>
+            </div>
+
+            <div class="item">
+              <img src="static/images/screw.png"
+                   style="width: 100%; display: block; margin: 0 auto;" />
+              <h2 class="subtitle has-text-centered">Screw Driving</h2>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--End Tasks image-->
+
+
+
+
+<div class="container has-text-centered">
+  <h2 class="title is-3 has-text-centered">Human Demonstrations</h2>
+
+  <div class="video-container" id="demoVideoContainer">
+    <video id="demo" controls>
+    </video>
+  </div>
+
+  <div class="field is-grouped is-grouped-centered mt-4">
+
+    <div class="control">
+      <div class="select is-medium">
+        <select id="demo-task">
+          <option value="peg">Peg</option>
+          <option value="battery">Battery</option>
+          <option value="key">Lock</option>
+          <option value="screw">Screw</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+    
+
+
+<div class="container has-text-centered  mt-6">
+  <h2 class="title is-3 has-text-centered">Experiments</h2>
+
+  <div class="video-container">
+    <video id="demoVideo" controls>
+    </video>
+    <div class="video-label">8×</div>
+  </div>
+
+  <div class="field is-grouped is-grouped-centered mt-4">
+
+    <div class="control">
+      <div class="select is-medium">
+        <select id="task">
+          <option value="peg">Peg</option>
+          <option value="battery">Battery</option>
+          <option value="key">Lock</option>
+          <option value="screw">Screw</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="control">
+      <div class="select is-medium">
+        <select id="direction">
+          <option value="forward">Forward</option>
+          <option value="reverse">Reverse</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="control">
+      <div class="select is-medium">
+        <select id="status">
+          <option value="complete">Complete</option>
+          <option value="unfinished">Unfinished</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="container has-text-centered mt-6">
+  <h2 class="title is-3 has-text-centered">Generalization to Novel Objects</h2>
+
+  <div class="video-container" id="novelVideoContainer">
+    <video id="novelObjectVideo" controls></video>
+    <div class="video-label">8×</div>
+  </div>
+
+  <div id="novelExplanationBox" class="box" style="display: none; max-width: 700px; margin: 0 auto; text-align: left;">
+    <p><strong>No lock opening reverse execution</strong></p>
+    <p>This case is omitted because the lock's own mechanism does not support closing the lock with the key.</p>
+  </div>
+  
+  <div class="field is-grouped is-grouped-centered mt-4">
+
+    <div class="control">
+      <div class="select is-medium">
+        <select id="novel-task">
+          <option value="peg">Peg</option>
+          <option value="battery">Battery</option>
+          <option value="key">Lock</option>
+          <option value="screw">Screw</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="control">
+      <div class="select is-medium">
+        <select id="novel-direction">
+          <option value="forward">Forward</option>
+          <option value="reverse">Reverse</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="container has-text-centered mt-6 mb-6">
+<section class="section hero is-light" id="implementation-details">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Implementation Details</h2>
+
+
+<div class="content has-text-justified">
+  <p>
+    Unless otherwise stated, learning, segmentation, and admittance
+    parameters were shared across all four tasks. Only the wrench safety
+    limits and scalar load weights were task-dependent to account for
+    different contact and material properties.
+  </p>
+</div>
+
+<h3 class="title is-4">Segmentation</h3>
+<div class="table-container">
+  <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7">
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Parameter</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Block segmentation</td><td>Block length</td><td>300 samples (0.3 s)</td></tr>
+      <tr><td>Boundary detection</td><td>Rotation / translation cosine thresholds</td><td>0.9 / 0.9</td></tr>
+      <tr><td>Boundary refinement weights</td><td>Rotation / translation weights</td><td>1.0 / 1.0</td></tr>
+      <tr><td>Small-motion block</td><td>Translation / rotation thresholds</td><td>0.2 mm / 0.2&deg;</td></tr>
+      <tr><td>Global refinement</td><td>Translation hysteresis min/max</td><td>2 mm / 5 mm</td></tr>
+      <tr><td>Global refinement</td><td>Rotation hysteresis min/max</td><td>5&deg; / 10&deg;</td></tr>
+      <tr><td>Dwell cleanup</td><td>Translation / rotation thresholds</td><td>5 mm / 10&deg;</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="title is-4">Spiral Search Alignment</h3>
+<div class="table-container">
+  <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7">
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Parameter</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Control</td><td>Timestep</td><td>1 ms</td></tr>
+      <tr><td>Spiral search</td><td>Rate / maximum radius</td><td>2 Hz / 15 mm</td></tr>
+      <tr><td>Spiral search</td><td>Angular / radial rate</td><td>0.5 rad/s / 0.125 mm/s</td></tr>
+      <tr><td>Spiral termination</td><td>Force / stable samples</td><td>4 N / 5 samples</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="title is-4">Screw Fitting and Execution under Admittance</h3>
+<div class="table-container">
+  <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7">
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Parameter</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Screw fitting weights</td><td>Rotation / translation weights</td><td>1.0 / 1.0</td></tr>
+      <tr><td>Control</td><td>Timestep</td><td>1 ms</td></tr>
+      <tr><td>6D admittance</td><td>M diagonal</td><td>[0.2, 0.2, 0.2, 0.05, 0.05, 0.05]</td></tr>
+      <tr><td>6D admittance</td><td>B diagonal</td><td>[40, 40, 40, 3, 3, 3]</td></tr>
+      <tr><td>6D admittance</td><td>K diagonal</td><td>[1000, 1000, 1000, 4, 4, 4]</td></tr>
+      <tr><td>1D admittance</td><td>B<sub>&theta;</sub></td><td>10 / |nominal progress speed|</td></tr>
+      <tr><td>1D admittance</td><td>M<sub>&theta;</sub></td><td>0.05 B<sub>&theta;</sub></td></tr>
+      <tr><td>Pose correction</td><td>Translation / rotation limits</td><td>4 mm / 0.1 rad per axis</td></tr>
+      <tr><td>Primitive termination</td><td>Speed / duration</td><td>10% of nominal speed / 0.3 s</td></tr>
+      <tr><td>Contact detection</td><td>Force </td><td>2.5 N</td></tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+
+    
+<h3 class="title is-4">Task-Dependent Wrench Parameters</h3>
+<div class="table-container">
+  <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7">
+    <thead>
+      <tr>
+        <th>Task / Phase</th>
+        <th>k<sub>F</sub><sup>&parallel;</sup></th>
+        <th>k<sub>T</sub><sup>&parallel;</sup></th>
+        <th>k<sub>F</sub><sup>&perp;</sup></th>
+        <th>k<sub>T</sub><sup>&perp;</sup></th>
+        <th>Force Limit</th>
+        <th>Torque Limit</th>
+        <th>T<sub>z</sub> Limit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Peg</td><td>1.0</td><td>5.0</td><td>0.1</td><td>0.1</td><td>25 N</td><td>2 Nm</td><td>10 Nm</td></tr>
+      <tr><td>Battery</td><td>1.5</td><td>10.0</td><td>1.0</td><td>1.0</td><td>25 N</td><td>3 Nm</td><td>10 Nm</td></tr>
+      <tr><td>Lock insertion</td><td>0.5</td><td>1.0</td><td>0.1</td><td>0.1</td><td>25 N</td><td>2 Nm</td><td>0.6 Nm</td></tr>
+      <tr><td>Lock rotation</td><td>1.0</td><td>30.0</td><td>0.1</td><td>0.1</td><td>25 N</td><td>2 Nm</td><td>0.6 Nm</td></tr>
+      <tr><td>Screw driving</td><td>1.0</td><td>30.0</td><td>0.1</td><td>0.1</td><td>25 N</td><td>3 Nm</td><td>10 Nm</td></tr>
+    </tbody>
+  </table>
+</div>
+
+  </div>
+</section>
+
+
+    
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{PaperKey,
+  title={Paper Title},
+  author={Authors},
+  journal={Conference},
+  year={2026},
+  url={https://domain.com/project-page}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
