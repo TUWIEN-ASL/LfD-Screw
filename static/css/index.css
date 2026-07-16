@@ -381,6 +381,14 @@ code {
   font-family: 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', monospace !important;
 }
 
+#BibTeX .container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: none !important;
+  text-align: left;
+}
+
+
 /* BibTeX Section Improvements */
 .bibtex-header {
   display: flex;
